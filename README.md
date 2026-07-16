@@ -1,6 +1,6 @@
 # Comparative Analysis of Machine Learning Models for Near-Earth Object Hazard Classification
 
-A comparative study evaluating 12 machine learning models (deep learning + classical ML + ensembles) for binary classification of near-Earth objects (NEOs) as hazardous or non-hazardous. The project compares PyTorch deep learning architectures (MLP and DNN) against scikit-learn classical methods on imbalanced orbital data (338K records, 9 raw features, 6.84:1 class ratio), with threshold tuning and ensemble strategies to address deployment requirements.
+A comparative study evaluating 12 machine learning models (deep learning + classical ML + ensembles) for binary classification of near-Earth objects (NEOs) as hazardous or non-hazardous. The project compares PyTorch deep learning architectures (MLP and DNN) against scikit-learn classical methods on imbalanced orbital data (338K records, 6 raw features (10 engineered), 6.84:1 class ratio), with threshold tuning and ensemble strategies to address deployment requirements.
 
 ---
 
@@ -22,7 +22,7 @@ A comparative study evaluating 12 machine learning models (deep learning + class
 
 ![Class Imbalance](figures/01-class-imbalance.png)
 
-*Figure 1: Class distribution showing 6.84:1 non-hazardous-to-hazardous ratio (293,852 vs 44,347 records).*
+*Figure 1: Class distribution showing 6.84:1 non-hazardous-to-hazardous ratio (295,037 vs 43,162 records).*
 
 <br>
 
@@ -195,7 +195,7 @@ For planetary defense practitioners: prioritize ensemble methods with calibrated
 
 - **Dependencies:** See `requirements.txt` for exact package versions
 
-- **Dataset:** 338,199 records, 6.84:1 class imbalance (295,037 non-hazardous / 43,162 hazardous), 6 raw features + 7 engineered
+- **Dataset:** 338,199 records, 6.84:1 class imbalance (295,037 non-hazardous / 43,162 hazardous), 6 raw features + 4 engineered = 10 total
 
 - **Figures:** Generated at 300 DPI for publication quality
 
