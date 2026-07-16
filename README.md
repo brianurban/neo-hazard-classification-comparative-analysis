@@ -1,6 +1,6 @@
 # Comparative Analysis of Machine Learning Models for Near-Earth Object Hazard Classification
 
-A comparative study evaluating 12 machine learning models (deep learning + classical ML + ensembles) for binary classification of near-Earth objects (NEOs) as hazardous or non-hazardous. The project compares PyTorch deep learning architectures (MLP and DNN) against scikit-learn classical methods on imbalanced orbital data (338K records, 6.84:1 class ratio), with threshold tuning and ensemble strategies to address deployment requirements.
+A comparative study evaluating 12 machine learning models (deep learning + classical ML + ensembles) for binary classification of near-Earth objects (NEOs) as hazardous or non-hazardous. The project compares PyTorch deep learning architectures (MLP and DNN) against scikit-learn classical methods on imbalanced orbital data (338K records, 9 raw features, 6.84:1 class ratio), with threshold tuning and ensemble strategies to address deployment requirements.
 
 ---
 
@@ -64,7 +64,7 @@ A comparative study evaluating 12 machine learning models (deep learning + class
 | **ROC-AUC** | Weighted Ensemble (MLP×0.25 + RF×0.75) | **0.9423** |
 | **PR-AUC** | Weighted Ensemble | **0.7256** |
 | **Threshold-Tuned Recall** | NEO_MLP (threshold=0.53) | **0.9674** |
-| **Unsupervised Enrichment** | K-Means (cluster 0) | **28.96%** vs 12.76% baseline |
+| **Unsupervised Enrichment** | K-Means (cluster 1) | **28.96%** vs 12.76% overall |
 
 *Bold values indicate the best-performing model for each metric.*
 
@@ -124,8 +124,8 @@ Kaggle. *Near-Earth Objects (1910-2024)*, 2024. https://www.kaggle.com/datasets/
 | Property | Value |
 |----------|-------|
 | Total Records | 338,199 |
-| Features | 9 (after engineering) |
-| Non-Hazardous | 293,037 (87.2%) |
+| Features | 10 (after engineering) |
+| Non-Hazardous | 295,037 (87.2%) |
 | Hazardous | 43,162 (12.8%) |
 | Class Imbalance Ratio | 6.84:1 |
 | Time Range | 1910-2024 |
@@ -191,7 +191,7 @@ For planetary defense practitioners: prioritize ensemble methods with calibrated
 
 - **Dependencies:** See `requirements.txt` for exact package versions
 
-- **Dataset:** 338,199 records, 6.84:1 class imbalance (295,037 non-hazardous / 43,162 hazardous)
+- **Dataset:** 338,199 records, 6.84:1 class imbalance (295,037 non-hazardous / 43,162 hazardous), 6 raw features + 7 engineered
 
 - **Figures:** Generated at 300 DPI for publication quality
 
