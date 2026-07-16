@@ -38,7 +38,7 @@ A comparative study evaluating 12 machine learning models (deep learning + class
 
 <br>
 
-![MLP Confusion/ROC](figures/04_neomlp-confusion-roc.png)
+![MLP Confusion/ROC](figures/04-neomlp-confusion-roc.png)
 
 *Figure 4: Test set confusion matrix and ROC curve for NEO_MLP (threshold=0.53, AUC=0.8804).*
 
