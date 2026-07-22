@@ -44,15 +44,15 @@ A comparative study evaluating 12 machine learning models (deep learning + class
 
 <br>
 
-![K-Means PCA](neo-figures/05-kmeans-pca.png)
+![Clustering Analysis](neo-figures/05-clustering-analysis.png)
 
-*Figure 5: PCA visualization comparing K-Means cluster assignments to true hazard labels.*
+*Figure 5: Elbow and silhouette analysis confirming k=2 as optimal cluster count for K-Means.*
 
 <br>
 
-![Clustering Analysis](neo-figures/06-clustering-analysis.png)
+![K-Means PCA](neo-figures/06-kmeans-pca.png)
 
-*Figure 6: Elbow and silhouette analysis confirming k=2 as optimal cluster count for K-Means.*
+*Figure 6: PCA visualization comparing K-Means cluster assignments to true hazard labels.*
 
 ---
 
