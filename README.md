@@ -20,19 +20,19 @@ A comparative study evaluating 12 machine learning models (deep learning + class
 
 ## Visual Results
 
-![Class Imbalance](figures/01-class-imbalance.png)
+![Class Imbalance](neo-figures/01-class-imbalance.png)
 
 *Figure 1: Class distribution showing 6.84:1 non-hazardous-to-hazardous ratio (295,037 vs 43,162 records).*
 
 <br>
 
-![Training Curves](figures/02-neodnn-training-curves.png)
+![Training Curves](neo-figures/02-neodnn-training-curves.png)
 
 *Figure 2: Training and validation loss/AUC over epochs for NEO_DNN with Focal Loss.*
 
 <br>
 
-![DNN Confusion/ROC](figures/03-neodnn-confusion-roc.png)
+![DNN Confusion/ROC](neo-figures/03-neodnn-confusion-roc.png)
 
 *Figure 3: Test set confusion matrix and ROC curve for NEO_DNN (threshold=0.51, AUC=0.8743).*
 
@@ -44,13 +44,13 @@ A comparative study evaluating 12 machine learning models (deep learning + class
 
 <br>
 
-![K-Means PCA](figures/05-kmeans-pca.png)
+![K-Means PCA](neo-figures/05-kmeans-pca.png)
 
 *Figure 5: PCA visualization comparing K-Means cluster assignments to true hazard labels.*
 
 <br>
 
-![Clustering Analysis](figures/06-clustering-analysis.png)
+![Clustering Analysis](neo-figures/06-clustering-analysis.png)
 
 *Figure 6: Elbow and silhouette analysis confirming k=2 as optimal cluster count for K-Means.*
 
